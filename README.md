@@ -57,5 +57,66 @@
 - Use in Machine Learning: It's particularly useful for algorithms that assume features are normally distributed and work better with data centered around zero, such as Support Vector Machines, Linear Regression, and Logistic Regression.
 - Common Preprocessing Step: Standard Scaler is often a common preprocessing step in many data processing pipelines and machine learning workflows.
 - No Fixed Range: The standardized values are not bounded to a specific range, which differentiates it from MinMaxScaler and makes it less suitable for algorithms that require features to be within a bounded interval.
-- 
+
+
+### 4. MaxAbsScaler:
+
+- Purpose: Scales each feature by its maximum absolute value so that the maximum absolute value of each feature is scaled to 1.0. It does not shift/center the data, and thus does not destroy any sparsity.
+- Use Cases: Particularly useful for sparse data.
+
+### 5. RobustScaler:
+
+- Purpose: Scales features using statistics that are robust to outliers. It removes the median and scales the data according to the Interquartile Range (IQR).
+- Use Cases: Ideal for datasets with outliers.
+
+
+### 6. QuantileTransformer:
+
+- Purpose: Transforms the features to follow a uniform or a normal distribution by spreading out the most frequent values and reduces the impact of (marginal) outliers.
+- Use Cases: Good for non-linear data and when you want to mitigate the effects of outliers.
+
+### 7. PowerTransformer:
+
+- Purpose: Applies a power transformation to each feature to make the data more Gaussian-like, useful for modeling issues related to heteroscedasticity.
+- Use Cases: Helpful when a model assumes the homogeneity of variance in the input data (e.g., linear models).
+---
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+---
+
+
+---
+
+
+
+
+
+
+
+
+
+
 ---

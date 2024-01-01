@@ -48,7 +48,7 @@ Feature scaling is a data preprocessing technique used to standardize the range 
 - MinMax scaling is a type of feature scaling that rescales the range of features to scale the range in [0, 1] or [a, b]. This is achieved by subtracting the minimum value of the feature and then dividing by the range of the feature.
 - Use Cases: Useful when you need values in a bounded interval; often used in neural networks and algorithms that are sensitive to the scale but not the distribution of data.
 
-#### The process of mean normalization typically involves two steps for each feature::
+#### The process of MinMax typically involves two steps for each feature::
 - Subtract the minimum: For each value in a feature, subtract the minimum of that feature from the value. 
 - Divide by Range: After subtracting the minimum, divide each value by the range (difference between the maximum and minimum values) of that feature. This step scales the feature values so that they fall within a similar range.
 
@@ -65,7 +65,7 @@ Feature scaling is a data preprocessing technique used to standardize the range 
 - Use Cases: Beneficial for algorithms that assume features are normally distributed and require centered data (e.g., Support Vector Machines, Linear Regression).
 - is an essential tool in data preprocessing for machine learning, especially for algorithms sensitive to the scale and distribution of the input features. It helps to mitigate issues that can arise from features that have different scales and units.
 
-#### The process of mean normalization typically involves two steps for each feature::
+#### The process of Z-Score Normalization typically involves two steps for each feature::
 - Subtract the Mean: For each value in a feature, subtract the mean of that feature from the value. This shifts the distribution of each feature to be centered around zero.
 - Divide by Standard Deviation: After subtracting the mean, divide each value by the standard deviation of that feature. This step scales the feature values so that they fall within a similar range.
   

@@ -146,7 +146,23 @@ Generalization refers to a model's ability to apply what it has learned from the
 
 
 ---
-## Generalization:
+## Regularization Techniques to solve Overfitting:
+
+These techniques help in balancing the model's ability to fit the training data while maintaining its capacity to generalize well to new data.
+
+1. L1 Regularization (Lasso Regression): Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, thereby performing feature selection.
+
+2. L2 Regularization (Ridge Regression): Implements a penalty equal to the square of the magnitude of coefficients. This doesn't set coefficients to zero but makes them smaller, diminishing the model's complexity.
+
+3. Elastic Net: Combines L1 and L2 regularization. It adds both penalties to the model, effectively blending the feature selection of L1 and the smoothing of L2.
+
+4. Dropout (for Neural Networks): Randomly drops units (and their connections) from the neural network during training, preventing over-reliance on certain features.
+
+5. Early Stopping: Halts the training process as soon as the performance on a validation set starts deteriorating, preventing the model from learning noise in the training data.
+
+6. Data Augmentation (for Deep Learning): Generates new training samples by altering the existing ones, increasing data diversity and thus reducing overfitting.
+
+7. Pruning (for Decision Trees): Removes parts of trees that provide little power to classify instances, reducing complexity and improving model generalization.
 
 
 

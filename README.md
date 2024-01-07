@@ -151,9 +151,22 @@ Generalization refers to a model's ability to apply what it has learned from the
 These techniques help in balancing the model's ability to fit the training data while maintaining its capacity to generalize well to new data.
 
 1. L1 Regularization (Lasso Regression): Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, thereby performing feature selection.
-
+  - Lasso regression is particularly useful when you have a high number of features and you suspect that only a subset of them are important, or when you want a model that is easy to interpret.
+  - L1 Regularization, commonly known as Lasso Regression (Least Absolute Shrinkage and Selection Operator), is a type of regularization technique used to prevent overfitting in machine learning models, particularly in linear regression models.
+  - Penalty on Absolute Size of Coefficients: L1 regularization adds a penalty to the loss function equal to the absolute value of the coefficients.
+  - Feature Selection: One of the distinctive properties of L1 regularization is its ability to reduce some coefficients to exactly zero. This means it not only prevents overfitting but also performs feature selection, identifying and using only the most important features in the model.
+  - Sparse Solutions: By reducing coefficients to zero, L1 regularization leads to sparse models, which can be beneficial when dealing with high-dimensional data, as it simplifies the model and makes it more interpretable.
+  - Tuning of Lamda: The strength of the regularization is controlled by the parameter Lamda. A higher value of Lamda increases the penalty, leading to more coefficients being shrunk to zero. The optimal value of Lamda is usually found through cross-validation.
+    
 2. L2 Regularization (Ridge Regression): Implements a penalty equal to the square of the magnitude of coefficients. This doesn't set coefficients to zero but makes them smaller, diminishing the model's complexity.
-
+  - Ridge regression is particularly useful when data suffer from multicollinearity (independent variables are highly correlated). By adding regularization, it helps to mitigate the problem of multicollinearity.
+  - L2 regularization is a common choice for regularization in many machine learning models, particularly when the goal is to prevent overfitting without necessarily reducing the model to only a subset of the features.
+  - L2 regularization adds a penalty to the loss function equivalent to the square of the magnitude of the coefficients.
+  - Unlike L1 regularization which can set some coefficients to zero, L2 regularization shrinks the coefficients towards zero but never exactly to zero. This means all features are kept in the model but their impact on the outcome is reduced.
+  - By penalizing the sum of the squares of the coefficients, it controls the complexity of the model, as large coefficients (which can lead to overfitting) are particularly penalized.
+  - Tuning of Lamda: The strength of the regularization is controlled by the parameter Lamda. A higher value of Lamda increases the penalty, leading to more coefficients being shrunk to zero. The optimal value of Lamda is usually found through cross-validation.
+  - Unlike L1 regularization, which can abruptly eliminate a variable by setting its coefficient to zero, L2 regularization smoothly adjusts the coefficients, often leading to better generalization.
+    
 3. Elastic Net: Combines L1 and L2 regularization. It adds both penalties to the model, effectively blending the feature selection of L1 and the smoothing of L2.
 
 4. Dropout (for Neural Networks): Randomly drops units (and their connections) from the neural network during training, preventing over-reliance on certain features.
@@ -168,7 +181,9 @@ These techniques help in balancing the model's ability to fit the training data 
 
 ---
 
+L1 Regularization, commonly known as Lasso Regression (Least Absolute Shrinkage and Selection Operator), is a type of regularization technique used to prevent overfitting in machine learning models, particularly in linear regression models. Here's a breakdown of its key aspects:
 
+Penalty on Absolute Size of Coefficients: L1 regularization adds a penalty to the loss function equal to the absolute value of the coefficients. This penalty is represented as 
 
 
 

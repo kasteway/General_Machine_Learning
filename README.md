@@ -331,6 +331,7 @@ These techniques help in balancing the model's ability to fit the training data 
   - Application-Specific Techniques: The type and extent of augmentation can vary depending on the specific application and requirements. For example, in medical image analysis, careful consideration is given to ensure that augmentations do not create unrealistic images.
 
   - Incorporation in Training Pipeline: Data augmentation is typically incorporated into the training pipeline, so new data variations are generated on-the-fly during training. This keeps the memory requirements manageable, as not all variations need to be stored at once.
+    
 
 ---
 

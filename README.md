@@ -181,9 +181,7 @@ These techniques help in balancing the model's ability to fit the training data 
 
 ---
 
-L1 Regularization, commonly known as Lasso Regression (Least Absolute Shrinkage and Selection Operator), is a type of regularization technique used to prevent overfitting in machine learning models, particularly in linear regression models. Here's a breakdown of its key aspects:
 
-Penalty on Absolute Size of Coefficients: L1 regularization adds a penalty to the loss function equal to the absolute value of the coefficients. This penalty is represented as 
 
 
 

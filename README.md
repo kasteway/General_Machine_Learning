@@ -168,6 +168,15 @@ These techniques help in balancing the model's ability to fit the training data 
   - Unlike L1 regularization, which can abruptly eliminate a variable by setting its coefficient to zero, L2 regularization smoothly adjusts the coefficients, often leading to better generalization.
     
 ### 3. Elastic Net: Combines L1 and L2 regularization. It adds both penalties to the model, effectively blending the feature selection of L1 and the smoothing of L2.
+- Elastic Net is a regularization technique used in linear regression models that combines the properties of both L1 and L2 regularization (Lasso and Ridge regression, respectively). It's designed to blend the simplicity of L1 regularization with the stability of L2. 
+- Elastic Net is particularly advantageous in situations with large numbers of correlated features, where Lasso might be too aggressive in feature elimination and Ridge might not enforce enough sparsity.
+- Combination of L1 and L2 Regularization: Elastic Net adds both L1 and L2 penalties to the loss function.
+- Feature Selection and Shrinkage: Like Lasso, Elastic Net can reduce some coefficients to zero, performing feature selection. At the same time, it shrinks other coefficients like Ridge regression, making it effective in scenarios where multiple correlated features predict similar outcomes.
+- Control of Regularization Mix: The parameter α controls the balance between L1 and L2 regularization. When α = 1, Elastic Net is equivalent to Lasso; when α = 0, it is equivalent to Ridge regression.
+- Useful in Highly Correlated Data: Elastic Net is particularly useful in situations where there are multiple features that are correlated with each other. Lasso might randomly select one of these features while Elastic Net is more likely to include all of them, but with smaller coefficients.
+- Robust to Overfitting and Multicollinearity: By combining the properties of both L1 and L2 regularization, Elastic Net is robust against overfitting and can handle multicollinearity better than Lasso or Ridge alone.
+- Tuning of Parameters: The optimal values for Lamda & α are typically found through a cross-validation process, which involves testing different combinations of these parameters to find the one that results in the best model performance.
+
 
 ### 4. Dropout (for Neural Networks): Randomly drops units (and their connections) from the neural network during training, preventing over-reliance on certain features.
 

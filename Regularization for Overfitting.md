@@ -2,6 +2,9 @@
 
 These techniques help in balancing the model's ability to fit the training data while maintaining its capacity to generalize well to new data.
 
+![Screenshot 2024-01-20 at 7 55 37 AM](https://github.com/kasteway/General_Machine_Learning/assets/62068733/81a638f0-8ff3-486d-ba79-358a470b4feb)
+
+
 ### 1. L1 Regularization (Lasso Regression): Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, thereby performing feature selection.
  
   - Lasso regression is particularly useful when you have a high number of features and you suspect that only a subset of them are important, or when you want a model that is easy to interpret.

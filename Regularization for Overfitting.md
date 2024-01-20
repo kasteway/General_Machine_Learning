@@ -12,7 +12,8 @@ These techniques help in balancing the model's ability to fit the training data 
 ## Therefore: Choose Lamda:
 - That appropriately balances minimizing the mean squared error & keeping the parameters small
 
-### 1. L1 Regularization (Lasso Regression): Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, thereby performing feature selection.
+### 1. L1 Regularization (Lasso Regression): 
+Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, thereby performing feature selection.
  
   - Lasso regression is particularly useful when you have a high number of features and you suspect that only a subset of them are important, or when you want a model that is easy to interpret.
   
@@ -26,7 +27,8 @@ These techniques help in balancing the model's ability to fit the training data 
   
   - Tuning of Lamda: The strength of the regularization is controlled by the parameter Lamda. A higher value of Lamda increases the penalty, leading to more coefficients being shrunk to zero. The optimal value of Lamda is usually found through cross-validation.
 
-### 2. L2 Regularization (Ridge Regression): Implements a penalty equal to the square of the magnitude of coefficients. This doesn't set coefficients to zero but makes them smaller, diminishing the model's complexity.
+### 2. L2 Regularization (Ridge Regression): 
+Implements a penalty equal to the square of the magnitude of coefficients. This doesn't set coefficients to zero but makes them smaller, diminishing the model's complexity.
   
   - Ridge regression is particularly useful when data suffer from multicollinearity (independent variables are highly correlated). By adding regularization, it helps to mitigate the problem of multicollinearity.
   
@@ -42,7 +44,8 @@ These techniques help in balancing the model's ability to fit the training data 
   
   - Unlike L1 regularization, which can abruptly eliminate a variable by setting its coefficient to zero, L2 regularization smoothly adjusts the coefficients, often leading to better generalization.
     
-### 3. Elastic Net: Combines L1 and L2 regularization. It adds both penalties to the model, effectively blending the feature selection of L1 and the smoothing of L2.
+### 3. Elastic Net: Combines L1 and L2 regularization. 
+It adds both penalties to the model, effectively blending the feature selection of L1 and the smoothing of L2.
   
   - Elastic Net is a regularization technique used in linear regression models that combines the properties of both L1 and L2 regularization (Lasso and Ridge regression, respectively). It's designed to blend the simplicity of L1 regularization with the stability of L2. 
  
@@ -60,7 +63,8 @@ These techniques help in balancing the model's ability to fit the training data 
   
   - Tuning of Parameters: The optimal values for Lamda & α are typically found through a cross-validation process, which involves testing different combinations of these parameters to find the one that results in the best model performance.
 
-### 4. Pruning (for Decision Trees): Removes parts of trees that provide little power to classify instances, reducing complexity and improving model generalization.
+### 4. Pruning (for Decision Trees): 
+Removes parts of trees that provide little power to classify instances, reducing complexity and improving model generalization.
   
   - Pruning in the context of decision trees is a technique used to reduce the complexity of the model and prevent overfitting. In machine learning, decision trees can grow very complex with many branches, which might fit the training data too closely, capturing noise and leading to poor performance on new data.
   
@@ -85,7 +89,8 @@ These techniques help in balancing the model's ability to fit the training data 
 
 
 
-### 5. Early Stopping: Halts the training process as soon as the performance on a validation set starts deteriorating, preventing the model from learning noise in the training data.
+### 5. Early Stopping: 
+Halts the training process as soon as the performance on a validation set starts deteriorating, preventing the model from learning noise in the training data.
 
   - Early Stopping is a simple yet effective method to ensure that a machine learning model, especially a neural network, is neither underfit nor overfit, but just right for the given data.
 
@@ -104,7 +109,8 @@ These techniques help in balancing the model's ability to fit the training data 
   - Practical and Efficient: It's a practical approach to avoid overfitting without the need to precisely tune regularization hyperparameters. It also often leads to reduced training time as the model is not trained for unnecessary epochs.
 
 
-### 6. Dropout (for Neural Networks): Randomly drops units (and their connections) from the neural network during training, preventing over-reliance on certain features.
+### 6. Dropout (for Neural Networks): 
+Randomly drops units (and their connections) from the neural network during training, preventing over-reliance on certain features.
 
   - Dropout is a simple yet effective technique that has proven to be highly successful in reducing overfitting in complex neural networks. It's one of the key innovations that has enabled the success of deep learning in various challenging domains.
 
@@ -122,7 +128,8 @@ These techniques help in balancing the model's ability to fit the training data 
 
   - Widely Used in Deep Learning: Dropout has become a standard tool in training deep neural networks, particularly those used in tasks like image and speech recognition, where it has been shown to significantly improve performance.
 
-### 7. Data Augmentation (for Deep Learning): Generates new training samples by altering the existing ones, increasing data diversity and thus reducing overfitting.
+### 7. Data Augmentation (for Deep Learning): 
+Generates new training samples by altering the existing ones, increasing data diversity and thus reducing overfitting.
 
   - Data Augmentation is a key technique in deep learning that enhances the quantity and quality of training data, leading to better model performance, especially in fields where collecting large datasets is challenging or expensive.
 

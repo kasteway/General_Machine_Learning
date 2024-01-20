@@ -4,6 +4,13 @@ These techniques help in balancing the model's ability to fit the training data 
 
 ![Screenshot 2024-01-20 at 7 55 37 AM](https://github.com/kasteway/General_Machine_Learning/assets/62068733/81a638f0-8ff3-486d-ba79-358a470b4feb)
 
+## Choosing  Lamda:
+
+- If Lamda = 0 --> The model will overfit, because we are not really applying regularization since it zeros out the regularization terms.
+- If lamda = Large # ex. 1,000  ---> The model will underfit because all the features will be almost 0.
+
+## Therefore: Choose Lamda:
+- That appropriately balances minimizing the mean squared error & keeping the parameters small
 
 ### 1. L1 Regularization (Lasso Regression): Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, thereby performing feature selection.
  

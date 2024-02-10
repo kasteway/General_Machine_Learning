@@ -24,6 +24,19 @@ Feature scaling is a data preprocessing technique used to standardize the range 
 
 ---
 
+## Steps in Feature Scaling:
+
+1. Perform Train Test Split
+2. Fit to Training Feature Data
+  - Data Leakage -> occurs if you fit to the entire data set which will be getting statistical data used to transform the data using part of the test data  
+3. Transform Training feature Data
+4. Transform Test Feature Data
+
+
+
+---
+
+
 
 ## Types of Feature Scaling:
 
